@@ -1,0 +1,60 @@
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+    margin-bottom: 60px;
+    background: linear-gradient(to left, aquamarine, deepskyblue);
+}
+
+footer {
+    background: black;
+}
+
+.titre {
+    font-weight: bold;
+}
+
+.img-poke {
+    width: 15%;
+    margin-left: -100px;
+    margin-top: -20px;
+}
+
+.img-fr {
+    width: 20%;
+}
+
+.img-en {
+    width: 20%;
+}
+
+.button {
+    width: 180px;
+    height: 90px;
+    font-size: 30px;
+}
+
+.button-pokedex {
+    margin-left: -450px;
+}
+
+.button-pokegame button-facile {
+    margin-left: 450px;
+}
+
+.form-pokedex-pokegame button-difficile{
+    height: 0px;
+}
+
+.col-md-2 {
+    float: right !important;
+}

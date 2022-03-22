@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Hubpokegame";
+}
+
+@*Div des images*@
+<div>
+    @*Image Pokemon*@
+    <img class="img-poke" src="~/Images/Pokemon.png" alt="FDP"/>
+ 
+    @*Image langues*@
+    <img class="img-fr" src="~/Images/fr.png" alt="FR"/>
+    <img class="img-en" src="~/Images/en.jpg" alt="EN"/>
+
+</div>
+
+@*Div des éléments*@
+<div class="text-center">
+    @*Titre de la page*@
+    <h1 class="display-4 titre">PokeGame</h1>
+
+    <br/><br/>
+
+    <p>Tu as fait le bon choix ! Bienvenue sur le fameux "Who's that POKEMON ?"</p>
+    <p>Le but est simple, un Pokémon va s'afficher et tu dois trouver son nom !</p>
+    <p>Tu vois ? Rien de plus simple ! Choisis ton niveau (Facile pour les nuls et Difficile pour les boss)</p>
+
+    <br/><br/>
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+                 @*Difficulté facile*@
+                <button class="button btn btn-outline-dark" type="submit" onclick="window.location.href = '../Pokegame/Facile';">Facile</button>
+                <p>Le Pokémon s'affiche en couleur</p>
+            </div>
+            <div class="col col-lg-2">
+               @*Pokegame*@
+                <button class="button btn btn-outline-dark" type="submit" onclick="window.location.href = '../Pokegame/Difficile';">Difficile</button>
+                <p>Seulement la silhouète du Pokémon s'affiche</p>
+            </div>
+        </div>
+    </div>
+</div>

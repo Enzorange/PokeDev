@@ -1,0 +1,49 @@
+﻿<link rel="stylesheet" href="~/css/site.css">
+
+@{
+    ViewData["Title"] = "PokeDev";
+}
+
+@*Div des images*@
+<div>
+    @*Image Pokemon*@
+    <img class="img-poke" src="~/Images/Pokemon.png" alt="FDP"/>
+ 
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2 col-md-2">
+                 @*drapeau français*@
+                <img class="img-fr" src="~/Images/fr.png" alt="FR"/>
+            </div>
+            <div class="col col-lg-2 col-md-2">
+                @*drapeau anglais*@
+                <img class="img-en" src="~/Images/en.jpg" alt="EN"/>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@*Div des éléments*@
+<div class="text-center">
+    @*Titre de la page*@
+    <h1 class="display-4 titre">PokeDev</h1>
+    <br/><br/>
+    <p>Bienvenue sur l'incroyable projet PokeDev !</p>
+    <p>Si tu veux bien choisir ton chemin (fais le bon choix)</p>
+    <br/><br/><br/>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+                 @*Pokedex*@
+                <button class="button btn btn-outline-dark" type="submit" onclick="window.location.href = '../Pokedex/Pokedex'">Pokedex</button>
+                <p>Un Pokedex ?</p>
+            </div>
+            <div class="col col-lg-2">
+                @*Pokegame*@
+                <button class="button btn btn-outline-dark" type="submit" onclick="window.location.href = '../Pokegame/HubPokegame'">Pokegame</button>
+                <p>Un jeu sur Pokémon ?</p>
+            </div>
+        </div>
+    </div>
+</div>
